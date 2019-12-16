@@ -1,5 +1,5 @@
 //  activate scrollspy 
 $('body').scrollspy({
-    target: '#Nav',
+    target: '#mainNav',
     offset: 56
   });
