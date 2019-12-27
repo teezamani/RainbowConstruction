@@ -3,27 +3,30 @@ html{
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: "Arial Nova", sans-serif;
-    box-sizing: border-box;
 }
 .container-fluid{
   margin: 0;
   padding: 0;
 }
+
 ul li{
   list-style-type: none;
-  
 }
+
+
 /* Navbar */
 .navbar{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .navbar a{
     text-transform: uppercase;
     font-size: 14px !important;
 }
+
 .topnav a:hover{
-    color:#1a2ccc !important;    
+    color:#5764d8 !important;    
     font-weight: bold;
 }
 
@@ -44,19 +47,20 @@ ul li{
 }
 
 .scroll-navvy {
-  background: #7272a6 !important;
+  background: #5764d8 !important;
   transition: 0.2s ease-out;
-  height: 80px;
-  background: #7272a6 !important;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.scroll-navvy .active .nav-link:hover {
-      color:white;
+
+.scroll-navvy .nav-link:hover {
+      color:white !important;
+      font-weight: bold;
   }
 
   .scroll-navvy .nav-link,
-  .scroll-navvy .navbar-brand {
+  .scroll-navvy .navbar-brand{
     color: #fff !important;
   }
 
@@ -82,18 +86,19 @@ ul li{
     text-align: center
 }
 .carousel-caption h1{
-   margin-top: 40px !important;
-   background-color: rgba(211, 208, 208, 0.3);
-   font-size: 50px;
+   margin-top: 60px !important;
    text-align: center;
    margin: auto;
-   padding: 10px 0px 10px 0px;
-    
+   padding: 10px 0px 10px 0px;   
+}
+#typing{
+  text-shadow: 2px 2px 4px #75799e;
 }
 .carousel-caption img{
     width:35%;
     right: 10%;
     height:40%;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
 }
 
   /* IMAGE FOR MOBILE INSTEAD OF CAROUSEL */
@@ -119,19 +124,20 @@ ul li{
 /* About us */
 .para{
   font-size: 20px;
-  line-height: 40px;
+  line-height: 38px;
 }
 
  /* What We Do */
  .card{
    overflow: hidden;
+   height: 400px;
+   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.8);
+
  }
  .card-img-bottom{
    height: 200px;
  }
- #whatwedo .row{
-   padding-left: 70px;
- }
+
 
  /* Contact */
 #contactus ul li{
@@ -139,6 +145,8 @@ ul li{
 }
 .form-contact{
   font-size: 20px;
+  padding-top: 25px;
+
 }
 .form-contact a{
   font-size: 20px !important;
@@ -156,17 +164,92 @@ ul li{
       .carousel-control-prev{display: none;}
       .carousel-control-next{display: none;}
       .carousel-caption{text-align: center;}
-      #mainNav  .nav-item .nav-link.active{border-bottom: none}
-      .navvy{
+       #mainNav  .nav-item .nav-link.active{border-bottom: none}
+       .navvy{
         background:#1a2ccc !important;
       }
   }
+
+  @media screen and (max-width:576px){
+    .navbar-brand h5{
+      font-size: 15px;
+    }
+    .navbar-brand sub{
+      font-size: 9px;
+      padding-top: -15px;
+    }
+    .card{
+      width:300px;
+      margin-left: 40px;
+    }
+    #typing{
+      font-size: 25px;
+    }
+    .fa-arrow-down{
+      padding-top: 70px !important;
+    }
+    .carousel-caption img{
+      width:30%;
+      right: 10%;
+      height:30%;
+      text-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+  }
+
+    .heading{
+      font-size: 18px;
+    }
+    .form-contact{
+      line-height: 40px;
+      padding-top: 10px;
+    }
+    .footer{
+      font-weight: bold;
+      font-size: 17px;
+   }
+  }
+
+  @media (min-width: 360px) and (max-width: 375px){
+    .navbar-brand h5{
+      font-size: 15px;
+    }
+    .navbar-brand sub{
+      font-size: 7px;
+      padding-top: -15px;
+    }
+    .card{
+        width:300px;
+        margin-left: 70px;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 360px){
+    .navbar-brand h5{
+      font-size: 15px;
+    }
+    .navbar-brand sub{
+      font-size: 6.5px;
+    }
+    .card{
+      margin-left: 15px;
+    }
+  }
+  @media screen and (max-width: 320px){
+    .card{
+      width: 250px;
+      margin-left: 2
+      2265220px;
+    }
+  }
+  
 
   @media screen and (min-width:768px){
     .container{
         margin-left: 60px !important;
         margin-right: 0px !important;
     }
+    #whatwedo .row{
+      padding-left: 70px;
+    } 
   }
   .fa-arrow-down{
     animation: arrow 1s infinite;
