@@ -19,6 +19,18 @@ ul li{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.navbar-brand p{
+  font-size: 40px;
+  text-shadow: -1px 1px#cacaca,
+               -2px 2px #cacaca,
+               -3px 3px #e9e6e6;
+}
+.navbar-brand sub{
+  font-weight: 400;
+  font-size: 15px !important;
+  top: 85px !important;
+  position: absolute;
+}
 
 .navbar a{
     text-transform: uppercase;
@@ -92,7 +104,14 @@ ul li{
    padding: 10px 0px 10px 0px;   
 }
 #typing{
-  text-shadow: 2px 2px 4px #75799e;
+  /* text-shadow: 2px 2px 4px #75799e; */
+  color: #fff;
+  outline: none;
+  font-size: 60px;
+  user-select: none;
+  text-shadow: -1px 1px#cacaca,
+               -2px 2px #cacaca,
+               -3px 3px #cacaca;
 }
 .carousel-caption img{
     width:35%;
@@ -120,24 +139,40 @@ ul li{
     background-color: #080d15;
     opacity: 0.7;
 }
+.heading{
+  padding-top: 100px;
+  padding-left: 50px;
+}
 
 /* About us */
 .para{
   font-size: 20px;
   line-height: 38px;
+  padding-left: 40px;
 }
 
  /* What We Do */
  .card{
    overflow: hidden;
-   height: 400px;
+   height: 430px;
    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.8);
-
  }
  .card-img-bottom{
    height: 200px;
  }
+.card-text{
+  font-size: 20px;
+}
 
+/* How We Do It*/
+#howwedoit  li{
+  font-size: 20px;
+  line-height: 38px;
+  text-align: center;
+}
+#howwedoit b{
+  font-size: 40px;
+}
 
  /* Contact */
 #contactus ul li{
@@ -168,22 +203,28 @@ ul li{
        .navvy{
         background:#1a2ccc !important;
       }
+      .low{display: none;}
+      .card{
+     overflow-y: auto;
+      }
   }
 
   @media screen and (max-width:576px){
-    .navbar-brand h5{
-      font-size: 15px;
+    .navbar-brand p{
+      font-size: 20px;
     }
     .navbar-brand sub{
-      font-size: 9px;
-      padding-top: -15px;
+      font-weight: bold;
+      font-size: 8px !important;
+      top: 55px !important;
+      position: absolute;
     }
     .card{
-      width:300px;
-      margin-left: 40px;
+      width:350px;
+      margin-left: 20px;
     }
     #typing{
-      font-size: 25px;
+      font-size: 30px;
     }
     .fa-arrow-down{
       padding-top: 70px !important;
@@ -197,6 +238,13 @@ ul li{
 
     .heading{
       font-size: 18px;
+      margin-left: -20px;
+    }
+    #aboutus{
+      margin-left: -30px;
+    }
+    #howwedoit{
+      margin-left: -30px;
     }
     .form-contact{
       line-height: 40px;
@@ -209,35 +257,62 @@ ul li{
   }
 
   @media (min-width: 360px) and (max-width: 375px){
-    .navbar-brand h5{
-      font-size: 15px;
+    .navbar-brand p{
+      font-size: 15px !important;
+      padding-top: 5px !important;
     }
     .navbar-brand sub{
-      font-size: 7px;
-      padding-top: -15px;
+      font-weight: bold;
+      font-size: 8px !important;
+      top: 55px !important;
+      position: absolute;
     }
     .card{
-        width:300px;
-        margin-left: 70px;
+        width:350px;
+        margin-left: -5px;
+        overflow-y: auto !important;
+    }
+    .heading{
+      margin-left: -30px;
+    }
+    #aboutus{
+      margin-left: -30px;
+    }
+    #howwedoit{
+      margin-left: -30px;
     }
   }
 
   @media (min-width: 320px) and (max-width: 360px){
-    .navbar-brand h5{
-      font-size: 15px;
+    .navbar-brand p{
+      font-size: 13px;
+      letter-spacing: 2px;
     }
     .navbar-brand sub{
-      font-size: 6.5px;
+      font-weight: bold;
+      font-size: 7px !important;
+      top: 50px !important;
+      position: absolute;
     }
     .card{
-      margin-left: 15px;
+      margin-left: -8px !important; 
+      width: 300px !important;
+      overflow-y: auto !important;
+    }
+    .heading{
+      margin-left: -30px !important;
+    }
+    #aboutus{
+      margin-left: -30px !important;
+    }
+    #howwedoit{
+      margin-left: -30px !important;
     }
   }
   @media screen and (max-width: 320px){
     .card{
       width: 250px;
-      margin-left: 2
-      2265220px;
+      margin-left: 20px;
     }
   }
   
