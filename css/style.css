@@ -208,7 +208,13 @@ ul li{
      overflow-y: auto;
       }
   }
-
+  
+  @media screen and (min-width:576px) and (max-width:801px){
+    .card{
+      margin-left: -50px !important;
+      width: 300px !important;
+    }
+  }
   @media screen and (max-width:576px){
     .navbar-brand p{
       font-size: 20px;
@@ -221,7 +227,7 @@ ul li{
     }
     .card{
       width:350px;
-      margin-left: 20px;
+      margin-left: 20px !important;
     }
     #typing{
       font-size: 30px;
@@ -269,7 +275,7 @@ ul li{
     }
     .card{
         width:350px;
-        margin-left: -5px;
+        margin-left: -5px !important;
         overflow-y: auto !important;
     }
     .heading{
@@ -295,7 +301,7 @@ ul li{
       position: absolute;
     }
     .card{
-      margin-left: -8px !important; 
+      margin-left: 14px !important; 
       width: 300px !important;
       overflow-y: auto !important;
     }
