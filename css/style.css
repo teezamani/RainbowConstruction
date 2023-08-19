@@ -85,6 +85,7 @@ ul li{
   .carousel img{
       width: 100%;
       height: 80vh;
+      object-fit: cover;
   }
 
   /* CAROUSEL CAPTION */
@@ -124,6 +125,7 @@ ul li{
   .carou img {
     width: 100%;
     height: 80vh;
+    object-fit: cover;
   }
 
   .carou{
@@ -174,6 +176,22 @@ ul li{
   font-size: 40px;
 }
 
+ /* Our Men At Work  */
+.whatwedo img{
+	padding: 15px;
+  margin: 5px;
+	width: 100%;
+  object-fit: cover;
+  background-size: cover;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+  object-fit: cover;
+}
+#whatwedo-modal .modal-img{
+	width: 100%;
+  object-fit: cover;
+}
+
  /* Contact */
 #contactus ul li{
   list-style-type: none;
@@ -191,6 +209,9 @@ ul li{
     font-weight: bold;
     font-size: 20px;
  }
+
+
+
 
   /* FOR MOBILE VIEW AND TABLET */
   @media  screen and (max-width:990px){
