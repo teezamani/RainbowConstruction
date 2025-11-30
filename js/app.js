@@ -1,10 +1,14 @@
+const buildingImg = document.querySelector(".building-img");
+const roadImg = document.querySelector(".road");
+const roadSection = document.querySelector(".road-section")
+
 //  activate scrollspy 
 $('body').scrollspy({
     target: '#mainNav',
     offset: 56
   });
 
-  // NAVBAR CHANGE
+// NAVBAR CHANGE
 $(window).on("scroll", () => {
   if ($(window).scrollTop()) {
       $("nav").addClass("scroll-navvy");
@@ -46,4 +50,12 @@ document.addEventListener("click",function (e){
       const myModal = new bootstrap.Modal(document.getElementById('whatwedo-modal'));
       myModal.show();
   }
+})
+
+// handling of projects
+document.querySelector(".building").addEventListener("click", function() {
+    buildingImg.classList.toggle("invisible");
+})
+roadImg.addEventListener("click", function() {
+  roadSection.classList.toggle("invisible");
 })

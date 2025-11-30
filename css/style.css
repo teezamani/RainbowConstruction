@@ -4,6 +4,9 @@ html{
     box-sizing: border-box;
     font-family: "Arial Nova", sans-serif;
 }
+body {
+   background-color: #786E65;
+}
 .container-fluid{
   margin: 0;
   padding: 0;
@@ -59,7 +62,7 @@ ul li{
 }
 
 .scroll-navvy {
-  background: #5764d8 !important;
+  background: #A99884 !important;
   transition: 0.2s ease-out;
   height: 100%;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
@@ -176,20 +179,39 @@ ul li{
   font-size: 40px;
 }
 
+/* projects done */
+.building:hover, .road:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.col-list {
+  font-size: 18px;
+  color: #212529;
+  font-style: oblique;
+  font-weight: bold;
+}
  /* Our Men At Work  */
-.whatwedo img{
+ .col img {
+  height: 460px;
+ }
+.whatwedo img, .projects img {
 	padding: 15px;
-  margin: 5px;
+  margin: 5px auto;
 	width: 100%;
   object-fit: cover;
   background-size: cover;
-	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	box-shadow: 0 0 15px rgba(255, 255, 255, 1);
 	cursor: pointer;
   object-fit: cover;
 }
 #whatwedo-modal .modal-img{
 	width: 100%;
   object-fit: cover;
+}
+
+/* building image */
+.invisible {
+  display: none;
 }
 
  /* Contact */
@@ -237,6 +259,7 @@ ul li{
     }
   }
   @media screen and (max-width:576px){
+    
     .navbar-brand p{
       font-size: 20px;
     }
