@@ -16,7 +16,6 @@ ul li{
   list-style-type: none;
 }
 
-
 /* Navbar */
 .navbar{
     margin-top: 10px;
@@ -190,11 +189,10 @@ ul li{
   font-style: oblique;
   font-weight: bold;
 }
- /* Our Men At Work  */
  .col img {
   height: 460px;
  }
-.whatwedo img, .projects img {
+ .projects img {
 	padding: 15px;
   margin: 5px auto;
 	width: 100%;
@@ -208,11 +206,18 @@ ul li{
 	width: 100%;
   object-fit: cover;
 }
-
-/* building image */
-.invisible {
-  display: none;
+.whatwedo-item {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  border-radius: 6px;
 }
+/* modal */
+.modal-content {
+  background-color: #786E65 !important;
+}
+
 
  /* Contact */
 #contactus ul li{
@@ -230,6 +235,7 @@ ul li{
  .footer{
     font-weight: bold;
     font-size: 20px;
+    background-color: #A99884 !important;
  }
 
 
@@ -303,7 +309,11 @@ ul li{
     .footer{
       font-weight: bold;
       font-size: 17px;
+      background-color: #A99884;
    }
+   /* .container-fluid > footer {
+      background-color: #A99884;
+   } */
   }
 
   @media (min-width: 360px) and (max-width: 375px){

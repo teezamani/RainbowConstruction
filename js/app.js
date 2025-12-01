@@ -1,6 +1,3 @@
-const buildingImg = document.querySelector(".building-img");
-const roadImg = document.querySelector(".road");
-const roadSection = document.querySelector(".road-section")
 
 //  activate scrollspy 
 $('body').scrollspy({
@@ -50,12 +47,4 @@ document.addEventListener("click",function (e){
       const myModal = new bootstrap.Modal(document.getElementById('whatwedo-modal'));
       myModal.show();
   }
-})
-
-// handling of projects
-document.querySelector(".building").addEventListener("click", function() {
-    buildingImg.classList.toggle("invisible");
-})
-roadImg.addEventListener("click", function() {
-  roadSection.classList.toggle("invisible");
 })
