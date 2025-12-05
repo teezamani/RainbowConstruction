@@ -1,10 +1,11 @@
+
 //  activate scrollspy 
 $('body').scrollspy({
     target: '#mainNav',
     offset: 56
   });
 
-  // NAVBAR CHANGE
+// NAVBAR CHANGE
 $(window).on("scroll", () => {
   if ($(window).scrollTop()) {
       $("nav").addClass("scroll-navvy");
