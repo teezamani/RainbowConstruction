@@ -10,6 +10,7 @@ body {
 .container-fluid{
   margin: 0;
   padding: 0;
+  color: #fff;
 }
 
 ul li{
@@ -185,7 +186,7 @@ ul li{
 }
 .col-list {
   font-size: 18px;
-  color: #212529;
+  color: #fff;
   font-style: oblique;
   font-weight: bold;
 }
@@ -235,6 +236,7 @@ ul li{
  .footer{
     font-weight: bold;
     font-size: 20px;
+    color: #fff !important;
     background-color: #A99884 !important;
  }
 
